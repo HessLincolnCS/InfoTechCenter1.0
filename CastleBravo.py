@@ -1,8 +1,12 @@
 import sys
 import time
 
-# Print a welcome message when the program starts
-print("\nWelcome to InfoTechCenter V1.0\n")
+# ANSI escape sequences for coloring
+GREEN = '\033[92m'
+RESET = '\033[0m'
+
+# Print a welcome message when the program starts in green
+print(GREEN + "\nWelcome to InfoTechCenter V1.0\n" + RESET)
 
 x = 0  # Initialize a counter variable 'x'
 ellipsis = 0  # Initialize 'ellipsis' to keep track of how many dots to print
@@ -19,12 +23,11 @@ while x != 20:
     sys.stdout.write("\r" + message)
 
     # Pause the program for 0.5 seconds to simulate a delay in booting
-    time.sleep(.5)
+    time.sleep(0.5)
 
     # Reset the ellipsis counter to 0 after reaching 3 dots (so it cycles 0-3)
     if ellipsis == 4:
         ellipsis = 0
 
-    # When 'x' reaches 20, print the final message and break the loop
-    if x == 20:
-        print("\n\nOperating System Booted Up - Retina Scanned - Access Granted")
+# When 'x' reaches 20, print the final message and break the loop in green
+print("\n\n" + GREEN + "Operating System Booted Up - Retina Scanned - Access Granted" + RESET)
