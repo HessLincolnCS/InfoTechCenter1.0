@@ -19,7 +19,7 @@ while x != 20:
     x += 1  # Increment the counter by 1
 
     # Create a message that adds dots to simulate booting progress
-    message = ("Infotech Center System Booting" + "." * ellipsis)
+    message = ("InfoTech Center System Booting" + "." * ellipsis)
     ellipsis += 1  # Increment the number of dots (ellipsis)
 
     # Write the message to the console, overwriting the previous line
