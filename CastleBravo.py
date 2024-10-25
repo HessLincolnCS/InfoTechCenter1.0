@@ -1,6 +1,10 @@
 
 import sys
 import time
+import random  # Used for random weather selection
+from time import sleep  # Used to simulate a pause in the program
+import random
+from time import sleep
 
 # ANSI escape sequences for coloring
 GREEN = '\033[92m'
@@ -38,8 +42,7 @@ print("\n\n" + GREEN + "Operating System Booted Up - Retina Scanned - Access Gra
 
 print("\n**********************************************************************\n")
 
-import random  # Used for random weather selection
-from time import sleep  # Used to simulate a pause in the program
+
 
 # Function to randomly select a weather condition
 def weather():
@@ -79,8 +82,7 @@ print("Weather Branch\n")
 vehicle_response_system()
 
 
-import random
-from time import sleep
+
 
 # Print decorative lines and program title
 print("\n**********************************************************************\n")
@@ -104,7 +106,7 @@ def gasStations():
 def nearestGasStationMessage(miles_range):
     station = gasStations()
     miles = round(random.uniform(*miles_range), 1)
-    return f"The closest gas station is {station}, which is {miles} miles away."
+    return f"Your gas tank is Quarter full. The closest gas station is {station}, which is {miles} miles away."
 
 # Function to alert the user based on the gas level
 def gasLevelAlert():
